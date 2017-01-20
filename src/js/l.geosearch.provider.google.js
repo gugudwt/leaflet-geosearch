@@ -40,7 +40,7 @@ L.GeoSearch.Provider.Google = L.Class.extend({
         script.type = "text/javascript";
         script.src = url;
         document.body.appendChild(script);
-        delete this.options.key;
+        delete this.options.key; 
         var handle = setInterval(function() {
             if (typeof google !== 'undefined' && L.GeoSearch.Provider.Google.Geocoder instanceof google.maps.Geocoder) {
                 clearInterval(handle);
